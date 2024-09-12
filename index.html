@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.10.5/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="index.js" defer></script>
+    <title>Battalion Force Management</title>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="firstContainer">
+            <div class="header"><h2>BATTALION FORCE MANAGEMENT</h2></div>
+            <div class="hr"></div>
+            <div class="signInConrainer">
+                <div class="signInBox">
+                    <form action="index.html" class="form">
+                        <input type="text" class="input" name="name" placeholder="Full Name" required>
+                        <input type="text" class="input" name="rank" placeholder="Rank" required>
+                        <input type="text" class="input" name="position" placeholder="Position" required>
+                        <input type="text" class="input" name="platoon" placeholder="Platoon" required>
+                        <input type="text" class="input" name="missionTime" placeholder="Mission Time (seconds)" required>
+                        <select class="input" name="status" required>
+                            <option value="active" selected>Active</option>
+                            <option value="reserve">Reserve</option>
+                            <option value="retired">Retired</option>
+                        </select>
+                        <input type="submit" class="submit" value="Add Soldier">
+                    </form>                    
+                </div>
+            </div>
+        </div>
+        <div class="secondContainer">
+            <div class="header"><h2>FORCES OVERVIEW</h2></div>
+            <div class="hr"></div>
+            <table class="table">
+                <tr class="tableHeader">
+                    <th><input type="button" class="BtnName" value="Full Name"></th>
+                    <th>Rank</th>
+                    <th>Position</th>
+                    <th>Platoon</th>
+                    <th>Mission</th>
+                    <th>Status</th>
+                    <th>Actions</th>
+                </tr>
+                <tbody></tbody>
+            </table>
+        </div>
+        <div class="editContainer hidden">
+            <div class="header"><h2>Edit Soldier</h2></div>
+            <div class="hr"></div>
+            <form class="editForm">
+                <input type="text" class="input" name="editName" placeholder="Full Name" required>
+                <input type="text" class="input" name="editRank" placeholder="Rank" required>
+                <input type="text" class="input" name="editPosition" placeholder="Position" required>
+                <input type="text" class="input" name="editPlatoon" placeholder="Platoon" required>
+                <input type="text" class="input" name="editMissionTime" placeholder="Mission Time (seconds)" required>
+                <select class="input" name="editStatus" required>
+                    <option value="active" selected>Active</option>
+                    <option value="reserve">Reserve</option>
+                    <option value="retired">Retired</option>
+                </select>
+                <input type="submit" class="submit" value="Save Changes">
+            </form>
+        </div>
+    </div>
+</body>
+</html>
