@@ -139,3 +139,7 @@ th, td {
 .visible {
     display: block;
 }
+
+.allBtn {
+    background-color: rgb(64, 151, 78);
+}

@@ -76,16 +76,23 @@ const addRow = (soldier) => {
 
     const remove = document.createElement('button');
     remove.classList.add('remove');
+    remove.classList.add('allBtn');
     remove.textContent = 'Remove';
     
     const mission = document.createElement('button');
     mission.classList.add('mission');
+    mission.classList.add('allBtn');
     mission.textContent = 'Mission';
     
     const edit = document.createElement('button');
     edit.classList.add('edit');
+    edit.classList.add('allBtn');
     edit.textContent = 'Edit';
     
+    actionTd.style.display = 'flex';
+    actionTd.style.flexDirection = 'column';
+    actionTd.style.justifyContent = 'space-evenly';
+
     actionTd.appendChild(remove);
     actionTd.appendChild(mission);
     actionTd.appendChild(edit);
